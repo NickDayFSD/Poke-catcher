@@ -1,4 +1,4 @@
-import pokeData from './data.js'
+import pokeData from './Pokemon.js';
 
 // generate three pokemon
 export function generateThreePokemon() {
