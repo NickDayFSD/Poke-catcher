@@ -35,8 +35,8 @@ section {
     width: 1000px;
     max-width: 80%;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    flex-direction: row;
+    justify-content: space-between;
     align-items: center;
     padding-top: var(--gutter);
     padding-bottom: var(--gutter);
@@ -60,6 +60,25 @@ footer {
     box-shadow: var(--shadow);
 }
 
+.catcher {
+    max-width: 100px;
+    max-height: 100px;
+}
+
+.catcher:hover {
+	background:linear-gradient(to bottom, #f6f6f600 5%, #fffffff8 100%);
+    border-radius: 50%;
+    border-style: solid;
+    border-width: 2px;
+}
+.catcher:active {
+	position:relative;
+	top:1px;
+}
+
+.hidden {
+    display: none;
+}
 
 h2 {
     font-size: 1.8rem;
