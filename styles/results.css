@@ -67,3 +67,8 @@ p {
 	position:relative;
 	top:1px;
 }
+
+#myChart {
+    max-width: 1000px;
+    max-height: 500px;
+}
