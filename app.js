@@ -33,11 +33,20 @@ function aWildPokemonAppears() {
 
 aWildPokemonAppears();
 
+let pokemonCaught = 0;
+
 button.addEventListener('click', () => {
     const selectedRadio = document.querySelector('input:checked');
 
     const chosenPokemon = findByPokemonName(selectedRadio.value);
 
+    pokemonCaught++;
     catchPokemon(chosenPokemon);
-    aWildPokemonAppears();
+
+    if (pokemonCaught < 10) {
+        aWildPokemonAppears();
+    } else {
+        window.location.href = './finish/index.html';
+    }
+    
 });
