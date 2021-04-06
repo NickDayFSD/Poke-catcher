@@ -36,7 +36,7 @@ section {
     max-width: 80%;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     padding-top: var(--gutter);
     padding-bottom: var(--gutter);
@@ -60,7 +60,23 @@ footer {
     box-shadow: var(--shadow);
 }
 
+.pokemon-img {
+    max-height: 150px;
+    max-width: 150px;
+}
+
+input:checked + img {
+    width: 200px;
+    height: 200px;
+    border: gold;
+    border-radius: 10px;
+    background-color: gold;
+}
+
 .catcher {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     max-width: 100px;
     max-height: 100px;
 }
@@ -95,12 +111,6 @@ h2 {
 
 header img {
     height: var(--header-height);
-}
-
-
-
-content {
-    width: 80%;
 }
 
 p {

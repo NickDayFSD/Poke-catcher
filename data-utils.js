@@ -29,5 +29,5 @@ export function generateThreePokemon() {
 }
 
 function getRandomIndex() {
-    return Math.ceil(Math.random() * pokeData.length);
+    return Math.floor(Math.random() * pokeData.length);
 }
