@@ -1,4 +1,4 @@
-import { findById, findByPokemonName} from './utils.js';
+import { findById } from './utils.js';
 
 // get pokedex
 const POKEDEX = 'POKEDEX';
