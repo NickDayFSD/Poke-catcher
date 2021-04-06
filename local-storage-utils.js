@@ -33,7 +33,8 @@ export function encounterPokemon(pokemon) {
         const newPokedexEntry = {
             id: pokemon.pokemon,
             captured: 0,
-            encountered: 1
+            encountered: 1,
+            image: pokemon.url_image
         };
 
         pokedex.push(newPokedexEntry);
