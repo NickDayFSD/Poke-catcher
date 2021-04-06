@@ -13,19 +13,20 @@ export function createPokedexListing(pokedex) {
     li.classList.add('pokemon');
 
     const image = document.createElement('img');
+    image.classList.add('pokemon-img');
     image.src = pokedex.image;
 
     const pName = document.createElement('p');
     pName.classList.add('name');
-    pName.textContent = pokedex.id;
+    pName.textContent = `Name: ${pokedex.id}`;
 
     const pCap = document.createElement('p');
     pCap.classList.add('captured');
-    pCap.textContent = pokedex.captured;
+    pCap.textContent = `You caught ${pokedex.captured} of them!`;
 
     const pSeen = document.createElement('p');
     pSeen.classList.add('spotted');
-    pSeen.textContent = pokedex.encountered;
+    pSeen.textContent = `You encountered ${pokedex.encountered} of them!`;
 
     li.append(image, pName, pCap, pSeen);
 
